@@ -1,0 +1,27 @@
+<div class="container mt-5 mb-5">
+    <h1 class="text-center">¡Tú decide con quién <span class="highlight">Vivir!</span></h1>
+</div>
+<div class="container mt-5 mb-5">
+
+    <div class="row">
+
+        <div class="col-lg-3" *ngFor="let fd of romieData">
+
+            <div class="foodbox mt-3 mb-3">
+                <img src="{{fd.romieImg}}">
+                <h1>{{fd.romieName}}</h1>
+                <p>{{fd.romieSexo}}</p>
+                <p>{{fd.romieUniversidad}}</p>
+                <p>{{fd.romieCarrera}}</p>
+                <p>{{fd.romieContacto}}</p>
+                <br/>
+                <a class="buybtn" [routerLink]="['/menu',fd.id]">Ver detalles &nbsp;<i class="bi bi-bag"></i></a>
+            </div>
+
+        </div>
+
+
+
+    </div>
+
+</div>
